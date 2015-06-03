@@ -268,11 +268,11 @@ void WindListener::onFrame(const Controller& controller) {
 }// End object
 
 int main() {
-  // Create a sample listener and controller
+  // Create a listener and controller
   WindListener listener;
   Controller controller;
 
-  // Have the sample listener receive events from the controller
+  // Have the listener receive events from the controller
   controller.addListener(listener);
 
   //Alt button					
@@ -289,7 +289,7 @@ int main() {
   std::cout << "Press Enter to quit..." << std::endl;
   std::cin.get();
 
-  // Remove the sample listener when done
+  // Remove the listener when done
   controller.removeListener(listener);
 
   return 0;
